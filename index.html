@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<div id="chart_div"></div>
+<script type="text/javascript" src="scripts.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart']}]}"></script>
+<div align="center" id="piechart" style="width: 900px; height: 500px;"></div>
+
+<head>
+    <link rel="stylesheet" href="styleSheet.css">
+    <title> Competitive Battling </title>
+    <style>
+        h1{
+            text-align: center;
+            color:aqua;
+        }
+        ol{
+            text-align: left;
+
+            color: aquamarine;
+        }
+        h2{
+            text-align: center;
+            color: red;
+        }
+        li{
+            text-align: center;
+        }
+        table{
+            text-align: center;
+        }
+    </style>
+    <h1>Competitive Pokemon</h1>
+</head>
+<body background scr="http://i.imgur.com/OksWvCm.jpg">
+
+
+<div id="content">
+<b><h2>Top 10 Pokemon</h2></b>
+    <ol>
+        <li>Charizard X</li>
+        <li>Aegislash</li>
+        <li>Talonflame</li>
+        <li>Rotom-W</li>
+        <li>Garchomp</li>
+        <li>Mega KangasKhan</li>
+        <li>Landorus</li>
+        <li>Heatran</li>
+        <li>Thundrus</li>
+        <li>Tyranitar</li>
+    </ol>
+</div>
+<div id="table">
+
+<table align="center" >
+    <tr>
+        <td>
+            <img id="img1" class="box"onclick="document.getElementById('img1').src='http://img03.deviantart.net/bf93/i/2013/275/c/5/mega_charizard_x_by_theangryaron-d6oy3du.png' " height="150" width="200" src="http://static.comicvine.com/uploads/original/11118/111186144/4623425-006___charizard_by_starwberrie-d5wn7of.jpg"/>
+            <p id="p1">Box1</p>
+            <button type="submit" onclick="changeDescription('p1')">Change Description</button>
+        </td>
+        <td>
+            <img id="img2" class="box" onclick="document.getElementById('img2').src='http://img11.deviantart.net/248e/i/2013/294/e/0/aegislash_wallpaper_in_black_by_spider_loot-d6rcq8c.jpg'" height="150" width="200" src="http://img3.wikia.nocookie.net/__cb20131015155737/es.pokemon/images/8/86/Aegislash.png"/>
+            <p id="p2">Box2</p>
+            <button type="submit" onclick="changeDescription('p2')">Change Description</button>
+        </td>
+        <td>
+            <img id="img3" class="box"onclick="document.getElementById('img3').src='http://orig12.deviantart.net/da29/f/2014/057/9/c/twitterdex____663_talonflame_by_rosemcclain-d78502t.png'" height="150" width="200" src="http://img15.deviantart.net/23da/i/2013/170/b/0/talonflame_pokedoll_art_by_methuselah_alchemist-d69qbhw.png"/>
+            <p id="p3">Box3</p>
+            <button type="submit" onclick="changeDescription('p3')">Change Description</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img id="img4" class="box"onclick="document.getElementById('img4').src='http://www.smogon.com/smog/issue27/vgcrain_rotomw.png'" height="150" width="200" src="http://vignette1.wikia.nocookie.net/pokemon/images/0/01/479Rotom_Normal_Forme_Dream.png/revision/latest?cb=20140511060441"/>
+            <p id="p4">Box4</p>
+            <button type="submit" onclick="changeDescription('p4')">Change Description</button>
+        </td>
+        <td>
+            <img id="img5" class="box"onclick="document.getElementById('img5').src='http://orig14.deviantart.net/7ae5/f/2014/042/b/4/unit_mega_garchomp_by_hasegawavega-d762513.jpg'" height="150" width="200" src="http://orig00.deviantart.net/a319/f/2012/016/b/c/bc9f216f0842022ba372f5b76c8f3b16-d4mmfck.png"/>
+            <p id="p5">Box5</p>
+            <button type="submit" onclick="changeDescription('p5')">Change Description</button>
+        </td>
+        <td>
+            <img id="img6" class="box"onclick="document.getElementById('img6').src='http://img09.deviantart.net/3791/i/2013/319/f/8/mega_kangaskhan_by_mafbot-d6ubedu.png'" height="150" width="200" src="http://img2.wikia.nocookie.net/__cb20150106011159/pokemon/images/8/86/115Kangaskhan_Pokemon_Mystery_Dungeon_Explorers_of_Sky.png"/>
+            <p id="p6">Box6</p>
+            <button type="submit" onclick="changeDescription('p6')">Change Description</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img id="img7" class="box"onclick="document.getElementById('img7').src='http://i.imgur.com/du2JVIH.jpg'" height="150" width="200" src="http://orig00.deviantart.net/f79e/f/2011/150/8/5/shiny_landorus__dreamworld_art_by_muums-d3hn2js.png"/>
+            <p id="p7">Box7</p>
+            <button type="submit" onclick="changeDescription('p7')">Change Description</button>
+        </td>
+        <td>
+            <img id="img8" class="box"onclick="document.getElementById('img8').src='http://img11.deviantart.net/c44c/i/2013/283/f/1/248___megatyranitar_by_tails19950-d6py28u.png'" height="150" width="200" src="http://pre13.deviantart.net/0fe8/th/pre/i/2012/364/8/3/chibi_tyranitar__by_thirteenorangess-d5pohil.png"/>
+            <p id="p8">Box8</p>
+            <button type="submit" onclick="changeDescription('p8')">Change Description</button>
+        </td>
+        <td>
+            <img id="img9" class="box"onclick="document.getElementById('img9').src='http://veekun.com/dex/media/pokemon/dream-world/642-therian.svg'" height="150" width="200
+           " src="http://cdn.bulbagarden.net/upload/thumb/b/b8/642Thundurus.png/250px-642Thundurus.png"/>
+            <p id="p9">Box9</p>
+            <button type="submit" onclick="changeDescription('p9')">Change Description</button>
+        </td>
+    </tr>
+</table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+body{
+    background-image: url("https://pokewalls.files.wordpress.com/2011/01/134vaporeon1600x1200.jpg");
+}
+table{
+    align-content: center;
+}
+#chart_div{
+   text-align: left;
+}
+#piechart{
+    content-align: left;
+}
